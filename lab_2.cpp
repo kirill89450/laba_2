@@ -31,7 +31,21 @@ int main()
 
 		cout << "Номер стрелка:" << n << "\n Сделал выстрелов:" << m << "\n";
 
-		
+		int** a;
+
+		a = new int* [n];
+
+		for (int i = 0; i < n; i++)
+
+			a[i] = new int[m];
+
+		for (int i = 0; i < n; i++)
+
+			for (int j = 0; j < m; j++)
+
+				a[i][j] = rand() % 11;
+
+		for (int i = 0; i < n; i++)
 
 		{
 

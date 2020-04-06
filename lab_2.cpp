@@ -31,21 +31,7 @@ int main()
 
 		cout << "Номер стрелка:" << n << "\n Сделал выстрелов:" << m << "\n";
 
-		int** a;
-
-		a = new int* [n];
-
-		for (int i = 0; i < n; i++)
-
-			a[i] = new int[m];
-
-		for (int i = 0; i < n; i++)
-
-			for (int j = 0; j < m; j++)
-
-				a[i][j] = rand() % 11;
-
-		for (int i = 0; i < n; i++)
+		
 
 		{
 
@@ -61,13 +47,13 @@ int main()
 
 		}
 
-		int* res;
+		int* result;
 
-		res = new int[n];
+		result = new int[n];
 
-		RESULTS(a, res, n, m);
+		RES(a, result, n, m);
 
-		WINNERS(res, n);
+		WIN(result, n);
 			break;
 		case 2:
 
